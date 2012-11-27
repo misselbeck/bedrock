@@ -1,0 +1,125 @@
+/* Bedrock Layout
+   Author: Matt Misselbeck, www.misselbeck.com
+----------------------------------------------------------------------------------*/
+
+@import "base";
+
+// Specify the number of columns and set gutter widths
+$columns: 12;
+$column-width: 60;
+$gutter-width: 0;
+
+// Remove the definition below for a pixel-based layout
+$total-width: 100%;
+
+/* =Mobile First
+----------------------------------------------------------------------------------*/
+
+header,
+nav[role="navigation"],
+#content,
+#sidebar-first,
+#sidebar-second,
+footer {
+  @include column(12);
+  @include box-sizing();
+  padding: 20px 40px;
+}
+
+#page {
+  background: #eee;
+}
+
+header {
+  background: #fff;
+}
+
+nav[role="navigation"] {
+  background: #3b3b3b;
+  padding: 10px 40px;
+}
+
+#main {
+  clear: both;
+  background: #d3d3d3;
+  overflow: hidden;
+}
+
+#content {
+  background: #efefef;
+
+}
+
+#sidebar-first {
+  background: #d3d3d3;
+}
+
+#sidebar-second {
+  background: blue;
+}
+
+footer {
+  clear: both;	
+  background: #3b3b3b;
+}
+
+/* =Tablet-ish
+----------------------------------------------------------------------------------*/
+
+@media screen and (min-width: $tablet) {
+	
+
+}
+
+/* =Desktop
+----------------------------------------------------------------------------------*/
+
+@media screen and (min-width: $desktop) {
+
+  #page {
+    max-width: 1200px; //can optionally remove or just set this as a fixed width
+    margin: 0 auto;
+    overflow: hidden;
+    background: #e3e3e3;
+  }
+
+/* =One Column
+----------------------------------------------------------*/
+
+  #content {
+    @include column(12);
+  }
+
+/* =Two Column
+----------------------------------------------------------*/
+
+  .one-sidebar #content {  
+    @include column(9);
+    @include push(3); //push to the right to make room for first sidebar
+    @include equal-heights(); //needed if column bg colors are different
+  }
+
+  .one-sidebar #sidebar-first {  
+    @include column(3);
+    @include neg(12); //pull in to left to display before content area
+    @include equal-heights();
+  }
+
+/* =Three Column
+----------------------------------------------------------*/
+
+  .two-sidebars #content {  
+    @include column(6);
+    @include push(3);
+  }
+
+  .two-sidebars #sidebar-first {  
+    @include column(3);
+    @include neg(9);
+  }
+
+  #sidebar-second {  
+    @include column(3);
+  }
+
+} //end Desktop

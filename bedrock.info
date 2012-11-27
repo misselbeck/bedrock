@@ -1,0 +1,29 @@
+name = Bedrock
+description = A simple HTML5 Drupal base theme for starting a custom project.
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+;-------------- R E G I O N S -------------
+
+regions[header]         = Header
+regions[navigation]     = Navigation
+regions[content]        = Content
+regions[sidebar_first]  = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[highlighted]    = Highlighted
+regions[footer]         = Footer
+
+regions[page_top]       = Page top
+regions[page_bottom]    = Page bottom
+
+;-------------- C S S -------------
+
+stylesheets[all][] = css/normalize.css
+stylesheets[all][] = css/tabs.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/style.css
+
+;-------------- J S -------------
+
+scripts[] = js/script.js
