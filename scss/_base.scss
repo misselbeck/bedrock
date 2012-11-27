@@ -98,6 +98,7 @@ $tablet: 768px;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
+  *behavior: url(/sites/all/themes/bedrock/css/boxsizing.htc);
 }
 
 @mixin border-radius($radius: 8px) {
