@@ -59,7 +59,7 @@ nav[role="navigation"] {
 }
 
 footer {
-  clear: both;	
+  clear: both;
   background: #3b3b3b;
 }
 
@@ -67,7 +67,7 @@ footer {
 ----------------------------------------------------------------------------------*/
 
 @media screen and (min-width: $tablet) {
-	
+
 
 }
 
@@ -93,13 +93,13 @@ footer {
 /* =Two Column
 ----------------------------------------------------------*/
 
-  .one-sidebar #content {  
+  .one-sidebar #content {
     @include column(9);
     @include push(3); //push to the right to make room for first sidebar
     @include equal-heights(); //needed if column bg colors are different
   }
 
-  .one-sidebar #sidebar-first {  
+  .one-sidebar #sidebar-first {
     @include column(3);
     @include neg(12); //pull in to left to display before content area
     @include equal-heights();
@@ -108,17 +108,17 @@ footer {
 /* =Three Column
 ----------------------------------------------------------*/
 
-  .two-sidebars #content {  
+  .two-sidebars #content {
     @include column(6);
     @include push(3);
   }
 
-  .two-sidebars #sidebar-first {  
+  .two-sidebars #sidebar-first {
     @include column(3);
     @include neg(9);
   }
 
-  #sidebar-second {  
+  #sidebar-second {
     @include column(3);
   }
 

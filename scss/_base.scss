@@ -26,7 +26,7 @@ $correction: 0.5 / $min-width * 100;
 // The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/
 @mixin clearfix() {
   *zoom:1;
-  
+
   &:before,
   &:after {
     content:"";
@@ -73,7 +73,7 @@ body {
 }
 
 //http://css-tricks.com/fluid-width-equal-height-columns/
-@mixin equal-heights() {  
+@mixin equal-heights() {
   margin-bottom: -99999px;
   padding-bottom: 99999px;
 }

@@ -17,7 +17,7 @@ body {
 	@include font-size(1.4);
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	background: #ccc url(../images/bg.png) 0 0 repeat;
-	color: #333;	
+	color: #333;
 }
 
 /* =Typography
@@ -66,7 +66,7 @@ blockquote {
   background: #fff;
   color: #6a6a6a;
   margin: 10px 30px 25px;
-  padding: 20px 20px 10px;  
+  padding: 20px 20px 10px;
 }
 
 /* =Header
@@ -111,7 +111,7 @@ nav[role="navigation"] .menu li {
 }
 
 nav[role="navigation"] .menu li.last {
-  padding: 0; 
+  padding: 0;
 }
 
 nav[role="navigation"] li a {
@@ -154,21 +154,21 @@ nav[role="navigation"] li a.active-trail {
 ----------------------------------------------------------*/
 
 @media screen and (min-width: $desktop) {
-  
+
   #nav-toggle {
     display: none;
   }
-  
+
   nav[role="navigation"] .menu {
     display: block !important;
     padding: 0;
   }
-  
+
   nav[role="navigation"] .menu li {
     display: inline;
     padding: 0 15px 0 0;
   }
-  
+
   nav[role="navigation"] .menu li.last {
     padding: 0;
   }
@@ -188,7 +188,7 @@ nav[role="navigation"] li a.active-trail {
   padding: 0 0 10px;
   border-bottom: 1px solid #bbb;
   list-style-type: none;
-  list-style-image: none; 
+  list-style-image: none;
 }
 
 #sidebar-first .menu li.last {
